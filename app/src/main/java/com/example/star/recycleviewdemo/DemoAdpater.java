@@ -16,7 +16,6 @@ public class DemoAdpater extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public DemoAdpater(Context context) {
         mLayoutInflater = LayoutInflater.from(context);
-        Log.d("wangshenxing", "DemoAdpater constructor");
     }
 
     public void addList(List<DataModel> list) {
@@ -31,7 +30,6 @@ public class DemoAdpater extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        Log.d("wangshenxing", "onCreateViewHolder : " + viewType);
         switch (viewType) {
             case DataModel.TYPE_ONE:
                 return new TypeOneViewHolder(mLayoutInflater.inflate(R.layout.item_type_one, parent, false));

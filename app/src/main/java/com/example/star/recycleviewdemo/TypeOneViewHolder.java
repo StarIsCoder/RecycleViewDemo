@@ -1,5 +1,6 @@
 package com.example.star.recycleviewdemo;
 
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +15,7 @@ public class TypeOneViewHolder extends TypeAbstractViewHolder {
         super(itemView);
         name = itemView.findViewById(R.id.name);
         avatar = itemView.findViewById(R.id.avatar);
+        itemView.setBackgroundColor(Color.GREEN);
     }
 
     @Override

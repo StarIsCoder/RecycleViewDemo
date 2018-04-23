@@ -1,5 +1,6 @@
 package com.example.star.recycleviewdemo;
 
+import android.graphics.Color;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,6 +18,7 @@ public class TypeThreeViewHolder extends TypeAbstractViewHolder {
         content = itemView.findViewById(R.id.content);
         avatar = itemView.findViewById(R.id.avatar);
         contentImage = itemView.findViewById(R.id.contentImage);
+        itemView.setBackgroundColor(Color.BLUE);
 
     }
 
